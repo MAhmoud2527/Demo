@@ -5,7 +5,6 @@
 function login(x) {
 		var email = document.getElementById("email");
 		var pass = document.getElementById("pass");
-		var mob = document.getElementById("mob");
 		var xhr = new XMLHttpRequest();
 
 		xhr.onreadystatechange = function() {
@@ -25,6 +24,6 @@ function login(x) {
 				}
 			}
 		}
-		xhr.open('GET', 'ajax.php?email='+email.value+'&pass='+pass.value+'&mob='+mob.value, true);
+		xhr.open('GET', 'ajax.php?email='+email.value+'&pass='+pass.value, true);
 		xhr.send('');
 	}
